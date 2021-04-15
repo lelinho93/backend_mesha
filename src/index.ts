@@ -2,6 +2,7 @@ import express from 'express'
 import knex from 'knex'
 import dotenv from 'dotenv'
 import { AddressInfo } from 'net'
+import { UserController } from './controller/UserController'
 
 
 dotenv.config()
@@ -29,6 +30,8 @@ app.use((req, res, next) => {
 
 app.use(express.json())
 
+app.post("/user/signup", new UserController().create)
+app.post("/user/login", new UserController().login)
 
 
 const server = app.listen(process.env.PORT || 3306, () => {
