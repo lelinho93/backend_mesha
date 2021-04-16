@@ -4,7 +4,7 @@
 
 Esse projeto foi densenvolvido para processo seletivo da Mesha Tecnologia, o objetivo é um sistema de serviços que devem ser realizados através de um login de um usuário, podendo contratar serviços.
 
-Obs.: somente foi densenvolvido endpoints de login e signup com autenticação.
+Obs.: somente foi desenvolvido endpoints de login e signup com autenticação.
 
 # Como rodar?
 
