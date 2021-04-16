@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { UserBusiness } from "../business/UserBusiness";
 
-export class UserController {
+export class UserController { // Camada que gerencia do endpoint de signup e login na camada CONTROLLER da arquitetura
 
     async create(req: Request, res: Response) {
         const userBusiness = new UserBusiness()

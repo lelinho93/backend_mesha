@@ -1,7 +1,8 @@
 import { connection } from '../index'
 
+// Camada que gerencia do endpoint de signup na camada DATA da arquitetura
 
-export default async function signupData(
+export default async function signupData(  
     id: string,
     email: string,
     password: string,

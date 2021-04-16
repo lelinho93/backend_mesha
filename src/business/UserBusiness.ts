@@ -4,12 +4,12 @@ import { TokenManager } from "../service/authenticator";
 import { HashManager } from "../service/hashManager";
 import { IdGenerator } from "../service/idGenerator";
 
-export class UserBusiness {
+export class UserBusiness { 
 
-    async create(email: string, password: string): Promise<string>{
+    async create(email: string, password: string): Promise<string>{  // Camada que gerencia do endpoint de signup e login na camada BUSINESS da arquitetura
 
         try {
-            const idGenerator = new IdGenerator()
+            const idGenerator = new IdGenerator()  // Utilização de todos os services
             const hashManager = new HashManager()
             const tokenManager = new TokenManager()
             const userDataBase = new UserDataBase()

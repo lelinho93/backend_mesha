@@ -1,7 +1,7 @@
 import { user } from "../model/User"
 import { BaseDataBase } from "./BaseDataBase"
 
-export class UserDataBase extends BaseDataBase {
+export class UserDataBase extends BaseDataBase { // Responsável por fazer a inserção do usuário no banco de dados, camada de DATA
 
     private static TABLE_NAME = "login_mesha_system"
     

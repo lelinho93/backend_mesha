@@ -1,6 +1,6 @@
 import knex from "knex";
 
-export abstract class BaseDataBase {
+export abstract class BaseDataBase { // Conexão com o banco de dados através da lib KNEX
 
     getConnection(){
         return knex({
